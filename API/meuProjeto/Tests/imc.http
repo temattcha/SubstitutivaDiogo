@@ -1,0 +1,16 @@
+@base_url = https://localhost:7198/pages/imc
+
+### Listar Imc
+GET {{base_url}}/listar
+
+### Cadastrar Imc
+POST {{base_url}}/cadastrar
+Content-Type: application/json
+
+{
+    "AlunoId" : 1,
+    "PesoEmKg" : "John",
+    "AlturaEmMetros" : "05/05/2005",
+}
+### Alterar Imc
+PATCH {{base_url}}/alterar/1

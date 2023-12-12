@@ -1,0 +1,13 @@
+@base_url = https://localhost:7198/pages/aluno
+
+### Listar Alunos
+GET {{base_url}}/listar
+
+### Cadastrar Alunos
+POST {{base_url}}/cadastrar
+Content-Type: application/json
+
+{
+    "Nome" : "John",
+    "DataNascimento" : "05/05/2005",
+}
